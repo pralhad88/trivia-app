@@ -4,7 +4,7 @@
 
 In the project directory, you can run:
 
-## `npm install`
+### `npm install`
 
 runnig above script on your root directory you will get install all required dependencies.
 
