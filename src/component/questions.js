@@ -75,7 +75,7 @@ class Questions extends Component {
     render() { // returns question with options.
         const {questionNumber} = this.state;
         return (<div>
-            <Container maxWidth="sm" style={{marginTop: 40}}>
+            <Container style={{marginTop: 40}}>
                 <Card>
                     <CardContent>
                         {questions.length > questionNumber && <div>
@@ -105,9 +105,9 @@ class Questions extends Component {
                     <Grid item xs={12} container direction="row" justify="center" alignItems="center">
                         {questionNumber == questions.length && <div>
                             <h3>Submit your quiz and get summary of your performance.</h3>
-                            <Button variant="contained" color="secondary" onClick={this.OnSubmit}>
+                           <center><Button variant="contained" color="secondary" onClick={this.OnSubmit}>
                                 Submit
-                        </Button></div>}
+                        </Button></center></div>}
                     </Grid>
                     </CardContent>
                 </Card>

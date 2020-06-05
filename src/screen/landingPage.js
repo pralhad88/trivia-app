@@ -80,8 +80,9 @@ class SplashScreen extends Component {
             justify="center"
             alignItems="center"
             spacing={1}
+            style={{ marginTop: 200 }}
           >
-            <Typography className="text" variant="h3" style={{ marginTop: 200 }}>
+            <Typography className="text" variant="h3">
               Welcome to Trivia Quiz
             </Typography>
             <Button variant="contained" color="secondary" onClick={this.handleOpen}>Launch App</Button>
