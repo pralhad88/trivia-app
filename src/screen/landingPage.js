@@ -9,6 +9,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import TextField from '@material-ui/core/TextField';
 import DialogActions from '@material-ui/core/DialogActions';
 import { withSnackbar } from 'notistack';
+import Icon from "../icon.png"
 
 class SplashScreen extends Component {
 
@@ -73,18 +74,23 @@ class SplashScreen extends Component {
   
   render() {
     return ( 
-        <Container>
+        <Container maxWidth="sm">
           <Grid
             container
             direction="column"
             justify="center"
             alignItems="center"
             spacing={1}
-            style={{ marginTop: 200 }}
           >
-            <Typography className="text" variant="h3">
+            <Typography className="text" variant="h3" style={{ marginTop: 10, color:"white" }}>
               Welcome to Trivia Quiz
             </Typography>
+            <center>
+              <img
+                src={Icon}
+                style={{marginTop: 20, marginBottom: 20 }}
+              />
+            </center>
             <Button variant="contained" color="secondary" onClick={this.handleOpen}>Launch App</Button>
           </Grid>
           <Dialog

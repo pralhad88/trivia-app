@@ -75,7 +75,7 @@ class Questions extends Component {
     render() { // returns question with options.
         const {questionNumber} = this.state;
         return (<div>
-            <Container style={{marginTop: 40}}>
+            <Container style={{marginTop: 40}} maxWidth="sm">
                 <Card>
                     <CardContent>
                         {questions.length > questionNumber && <div>
